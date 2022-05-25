@@ -24,9 +24,19 @@ Assumptions for Markov Chain :
 
 
 # Program
+## Devolped by: SAFA
+## Registration no.: 212220230040
+```
+import numpy as np
+P0=[0.3,0.2,0.5]
+P=[[0,2/3,1/3],[1/2,0,1/2],[1/2,1/2,0]]
+n=10
+for i in range(1,n+1):
+    P0=np.multiply(P0,P)
+    print("The %d -step probability distribution is "%i)
+    print(P0)
 
-
-
-
+```
 # Results and Output : 
-
+![image](https://user-images.githubusercontent.com/75234912/170193780-a37dbc1e-b35c-4833-a849-ba1dcc229453.png)
+![image](https://user-images.githubusercontent.com/75234912/170193852-3d239434-5ad3-4076-9c50-b602e96f8dd9.png)
